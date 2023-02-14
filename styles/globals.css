@@ -6,6 +6,7 @@
 
 body {
   font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+  @apply pt-10;
 }
 
 h1 {

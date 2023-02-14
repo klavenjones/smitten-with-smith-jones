@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { ReactNode } from 'react';
 
-
 const navLinks = [
   {
     href: '/our-story',
@@ -31,7 +30,7 @@ const navLinks = [
 
 export function Navigation() {
   return (
-    <nav className="w-full flex items-center justify-center py-6">
+    <nav className="w-full bg-white flex items-center justify-center py-4 shadow-lg fixed top-0 z-50">
       <div className="navbar bg-base-100 max-w-[1440px] p-0">
         <div className="navbar-start">
           <div className="dropdown sm:hidden">
