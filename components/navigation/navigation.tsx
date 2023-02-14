@@ -30,8 +30,8 @@ const navLinks = [
 
 export function Navigation() {
   return (
-    <nav className="w-full bg-white flex items-center justify-center py-4 shadow-lg fixed top-0 z-50">
-      <div className="navbar bg-base-100 max-w-[1440px] p-0">
+    <nav className="w-full bg-white flex items-center justify-center py-2 shadow-lg fixed top-0 z-50">
+      <div className="navbar bg-base-100 max-w-[1440px] lg:px-0">
         <div className="navbar-start">
           <div className="dropdown sm:hidden">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -90,7 +90,7 @@ export function Navigation() {
           </div>
           <div className="hidden sm:block">
             <div>
-              <ul className="menu hidden sm:menu-horizontal sm:space-x-2">
+              <ul className="menu hidden sm:menu-horizontal">
                 {navLinks.slice(3).map(
                   (item, i): ReactNode => (
                     <li key={item.name} tabIndex={i}>

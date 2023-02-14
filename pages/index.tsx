@@ -1,4 +1,4 @@
-import { Navigation } from '@/components';
+import { Hero, Layout, Navigation } from '@/components';
 import Head from 'next/head';
 
 export default function Home() {
@@ -10,18 +10,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navigation />
-      <main>
-        <div
-          className="hero min-h-[75vh]"
-          style={{
-            backgroundImage: `url("/PortraitWeddingHERO.png")`,
-          }}
-        >
-          {/* <div className="hero-overlay bg-opacity-60"></div> */}
-          <div className="hero-content text-center text-neutral-content"></div>
-        </div>
-      </main>
+      <Layout>
+        <h1>Content</h1>
+      </Layout>
     </>
   );
 }
