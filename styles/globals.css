@@ -3,3 +3,11 @@
 @tailwind utilities;
 /* Custom Fonts */
 @import url('./fonts.css');
+
+body {
+  font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: 'NewYork', Georgia, 'Times New Roman', Times, serif;
+}

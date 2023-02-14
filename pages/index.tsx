@@ -1,3 +1,4 @@
+import { Navigation } from '@/components/navigation/navigation';
 import Head from 'next/head';
 
 export default function Home() {
@@ -9,10 +10,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1 className="text-7xl">Hello World</h1>
-        <p>Hello New York</p>
-      </main>
+      <Navigation />
+      <main></main>
     </>
   );
 }
