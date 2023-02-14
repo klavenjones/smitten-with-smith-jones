@@ -1,4 +1,3 @@
-import { Head } from 'next/document';
 import { ReactNode } from 'react';
 import { Navigation } from '../navigation';
 import { Hero } from '../hero';

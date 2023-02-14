@@ -6,7 +6,7 @@
 
 body {
   font-family: 'SF Pro', Arial, Helvetica, sans-serif;
-  @apply pt-20 sm:pt-[84px]
+  @apply pt-20 sm:pt-[84px];
 }
 
 h1 {
@@ -14,15 +14,14 @@ h1 {
 }
 
 .menu {
-  @apply lg:space-x-8
+  @apply lg:space-x-8;
 }
 
-.menu li a{
-  @apply lg:p-0 
+.menu li a {
+  @apply lg:p-0;
 }
-
 
 .hero-image {
   background-image: url('/PortraitWeddingHERO.png');
-  @apply min-h-[60vh] lg:min-h-[70vh] xl:min-h-screen
+  @apply min-h-[60vh] lg:min-h-[70vh] xl:min-h-screen;
 }

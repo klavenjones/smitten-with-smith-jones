@@ -1,4 +1,4 @@
-import { Hero, Layout, Navigation } from '@/components';
+import { Layout } from '@/components';
 import Head from 'next/head';
 
 export default function Home() {
