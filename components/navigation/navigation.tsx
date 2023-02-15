@@ -78,7 +78,7 @@ export function Navigation() {
           </div>
         </div>
         <div className="navbar-center">
-          <Link href="/" className="hidden sm:block  text-4xl">
+          <Link tabIndex={7} href="/" className="hidden sm:block  text-4xl">
             <h1>Brittani & Klaven</h1>
           </Link>
         </div>
@@ -93,7 +93,7 @@ export function Navigation() {
               <ul className="menu hidden sm:menu-horizontal">
                 {navLinks.slice(3).map(
                   (item, i): ReactNode => (
-                    <li key={item.name} tabIndex={i}>
+                    <li key={item.name} tabIndex={i + 3}>
                       <Link
                         className="text-xl tracking-wide uppercase hover:bg-transparent hover:text-gray-400"
                         href={item.href}

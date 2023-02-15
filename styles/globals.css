@@ -6,10 +6,14 @@
 
 body {
   font-family: 'SF Pro', Arial, Helvetica, sans-serif;
-  @apply pt-20 sm:pt-[84px];
+  @apply pt-20 sm:pt-[84px] lg:pt-[80px];
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'NewYork', Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -18,10 +22,14 @@ h1 {
 }
 
 .menu li a {
-  @apply lg:p-0;
+  @apply lg:p-0 hover:bg-transparent hover:text-gray-400 focus:bg-transparent focus:font-bold;
+}
+
+.landing-page-menu li a {
+  @apply font-semibold underline uppercase text-2xl sm:text-3xl;
 }
 
 .hero-image {
   background-image: url('/PortraitWeddingHERO.png');
-  @apply min-h-[60vh] lg:min-h-[70vh] xl:min-h-screen;
+  @apply min-h-[60vh] lg:min-h-[90vh] xl:min-h-screen;
 }

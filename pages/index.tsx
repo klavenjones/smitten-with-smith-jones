@@ -1,5 +1,6 @@
 import { Layout } from '@/components';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -11,7 +12,39 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <h1>Content</h1>
+        <div className="flex items-center justify-center pt-24 ">
+          <h1 className="text-6xl sm:text-7xl md:text-[260px] uppercase opacity-5">We Eloped</h1>
+        </div>
+
+        <div className="mt-10 text-center space-y-4">
+          <h2 className="text-4xl  sm:text-5xl md:text-6xl">Brittani & Klaven</h2>
+          <p className="text-xl sm:text-2xl md:text-3xl font-semibold">#SmittenwithSmithJones</p>
+          <p>We eloped, but we would still love to celebrate our union with all of you!</p>
+        </div>
+
+        <div className="mt-10 text-center space-y-4">
+          <h2 className="text-3xl  sm:text-4xl md:text-5xl">Friday, July 28, 2023</h2>
+          <p className="text-lg font-normal sm:text-xl md:text-2xl">6:00PM - 1200AM</p>
+        </div>
+
+        <div className="mt-10 text-center space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl">Julliette</h2>
+          <p className="text-lg font-normal sm:text-xl md:text-2xl">135 North 5th Street Brooklyn, NY 11249</p>
+        </div>
+
+        <div className="mt-10 text-center space-y-4">
+          <ul className="menu menu-horizontal landing-page-menu sm:space-x-8 lg:space-x-14">
+            <li tabIndex={7}>
+              <Link href="#">Details</Link>
+            </li>
+            <li tabIndex={8}>
+              <Link href="#">Registry</Link>
+            </li>
+            <li tabIndex={9}>
+              <Link href="#">RSVP</Link>
+            </li>
+          </ul>
+        </div>
       </Layout>
     </>
   );
