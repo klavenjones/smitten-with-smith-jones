@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "check-types": "tsc --pretty --noEmit",
-    "prettier:check": "prettier --check ./**/*.{ts,js,json,css}",
-    "prettier:write": "prettier --write ./**/*.{ts,js,json,css}"
+    "prettier:check": "prettier --check ./**/*.{ts,tsx,js,json,css}",
+    "prettier:write": "prettier --write ./**/*.{ts,tsx,js,json,css}"
   },
   "dependencies": {
     "@next/font": "13.1.6",
