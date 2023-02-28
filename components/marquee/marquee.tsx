@@ -6,7 +6,7 @@ interface MarqueeProps {
 
 export function Marquee({ direction }: MarqueeProps) {
   return (
-    <div className="container min-w-full relative">
+    <div className="container min-w-full relative overflow-hidden">
       <div
         className={classNames(
           'flex w-full max-h-64 gap-1',

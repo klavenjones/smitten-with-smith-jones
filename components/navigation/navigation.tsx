@@ -28,7 +28,7 @@ const navLinks = [
   },
 ];
 
-export function Navigation() {
+export function OldNavigation() {
   return (
     <nav className="w-full bg-white flex items-center justify-center py-2 shadow-lg fixed top-0 z-50">
       <div className="navbar bg-base-100 max-w-[1440px] lg:px-0">
@@ -106,6 +106,27 @@ export function Navigation() {
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export function Navigation() {
+  return (
+    <nav className="w-full bg-transparent flex items-center justify-center py-2 fixed top-0 z-50">
+      <div className="navbar bg-transparent lg:px-0">
+        <div className="ml-auto">
+          <button className="btn btn-square btn-ghost text-white transition-all duration-500 hover:bg-transparent hover:text-gray-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="inline-block w-7 h-7 sm:h-8 sm:w-8 stroke-current"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
         </div>
       </div>
     </nav>

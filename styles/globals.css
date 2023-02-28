@@ -6,7 +6,6 @@
 
 body {
   font-family: 'SF Pro', Arial, Helvetica, sans-serif;
-  @apply pt-20 sm:pt-[84px] lg:pt-[80px];
 }
 
 h1,
@@ -30,7 +29,7 @@ h5 {
 }
 
 .hero-image {
-  background-image: url('/PortraitWeddingHERO.png');
+  background-image: url('/brittani_and_klaven_header.jpg');
   @apply min-h-[60vh] lg:min-h-[90vh] xl:min-h-screen;
 }
 
