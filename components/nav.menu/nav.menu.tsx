@@ -65,7 +65,7 @@ export function NavMenu({ isOpen }: NavMenuProps) {
         variants={menuVariant}
         className="w-full h-full bg-background flex items-center justify-center"
       >
-        <motion.ul variants={navVariants} className="w-2/3 h-2/3 flex flex-col justify-center  space-y-10">
+        <motion.ul variants={navVariants} className="w-2/3 h-2/3 flex flex-col justify-center space-y-10">
           {navLinks.map(
             (item, i): ReactNode => (
               <motion.li

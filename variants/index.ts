@@ -48,10 +48,12 @@ export const navItemVariant = {
 
 export const navItemOverlayVariant = {
   open: {
-    transform: 'translateY(200%)',
+    display: 'block',
+    transform: 'translateY(100%)',
     transition: {
       ease: 'easeIn',
     },
+    transitionEnd: { display: 'none' },
   },
   closed: {
     transform: 'translateY(0%)',
