@@ -10,11 +10,8 @@ export default function OurStory() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
-        <div className="flex items-center justify-center">
-          <h1 className="text-[12vw] uppercase opacity-5">Our Story</h1>
-        </div>
-      </Layout>
+      <Layout />
+      <h1>Our Story</h1>
     </>
   );
 }
