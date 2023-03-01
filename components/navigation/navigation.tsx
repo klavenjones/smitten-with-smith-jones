@@ -1,7 +1,6 @@
 import { motion, useCycle } from 'framer-motion';
 import { useRef } from 'react';
-import { MenuToggle } from '../menu.toggle/menu.toggle';
-import { NavMenu } from '../nav.menu';
+import { MenuToggle, NavMenu } from '..';
 
 export function Navigation() {
   const [isOpen, toggleOpen] = useCycle(false, true);
