@@ -33,6 +33,10 @@ h5 {
   @apply min-h-[60vh] lg:min-h-[90vh] xl:min-h-screen;
 }
 
+.menu-image {
+  background-image: url('/brittani_and_klaven_header.jpg');
+}
+
 .scroll-left {
   animation: scroll-left 10s linear infinite;
 }
