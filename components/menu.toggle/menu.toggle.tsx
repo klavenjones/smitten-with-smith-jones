@@ -1,4 +1,5 @@
 import { MenuToggleProps } from '@/interfaces';
+import classNames from 'classnames';
 import { motion } from 'framer-motion';
 
 // eslint-disable-next-line
@@ -6,39 +7,51 @@ const Path = (props: any): JSX.Element => (
   <motion.path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" {...props} />
 );
 
-export function MenuToggle({ toggle }: MenuToggleProps): JSX.Element {
+export function MenuToggle({ toggle, isOpen }: MenuToggleProps): JSX.Element {
   return (
-    <button
-      onClick={toggle}
-      className="btn btn-square btn-ghost z-50 text-project-white transition-all duration-500 hover:bg-transparent"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        className="inline-block w-7 h-7 sm:h-8 sm:w-8 stroke-current"
+    <div className="z-[100] fixed top-[15px] right-[1.5rem]">
+      <button
+        onClick={toggle}
+        className={classNames(
+          'relative transition-all duration-100 w-10 h-10 hover:bg-transparent',
+          {
+            'text-tertiary': isOpen,
+          },
+          { 'text-current': !isOpen }
+        )}
       >
-        <Path
-          variants={{
-            closed: { d: 'M 2 2.5 L 20 2.5', color: '#f0f5f7' },
-            open: { d: 'M 3 16.5 L 17 2.5', color: '#616C75' },
-          }}
-        />
-        <Path
-          d="M 2 9.423 L 20 9.423"
-          variants={{
-            closed: { opacity: 1 },
-            open: { opacity: 0 },
-          }}
-          transition={{ duration: 0.1 }}
-        />
-        <Path
-          variants={{
-            closed: { d: 'M 2 16.346 L 20 16.346', color: '#f0f5f7' },
-            open: { d: 'M 3 2.5 L 17 16.346', color: '#616C75' },
-          }}
-        />
-      </svg>
-    </button>
+        <span className="sr-only">Open Main Menu</span>
+        <div className="w-6 absolute left-1/2 top-1/2  transform  -translate-x-1/2 -translate-y-1/2">
+          <span
+            aria-hidden="true"
+            className={classNames(
+              'block absolute h-0.5 w-full bg-current transition-all duration-500 ease-in-out',
+              {
+                'rotate-45': isOpen,
+              },
+              { ' -translate-y-1.5': !isOpen }
+            )}
+          />
+
+          <span
+            aria-hidden="true"
+            className={classNames('block absolute h-0.5 w-full bg-current transition-all duration-500 ease-in-out', {
+              'opacity-0': isOpen,
+            })}
+          />
+
+          <span
+            aria-hidden="true"
+            className={classNames(
+              'block absolute h-0.5 w-full bg-current transition-all duration-500 ease-in-out',
+              {
+                '-rotate-45': isOpen,
+              },
+              { 'translate-y-1.5': !isOpen }
+            )}
+          />
+        </div>
+      </button>
+    </div>
   );
 }

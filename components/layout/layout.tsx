@@ -10,7 +10,7 @@ export function Layout() {
   return (
     <>
       <header>
-        <Navigation />
+        <Navigation page="our-story" />
       </header>
       <section>
         <Hero />

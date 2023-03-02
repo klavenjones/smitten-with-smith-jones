@@ -76,7 +76,7 @@ export function NavMenu({ isOpen }: NavMenuProps) {
               >
                 <motion.div variants={navItemOverlayVariant} className="bg-background h-full w-full absolute" />
                 <Link
-                  className="text-3xl md:text-4xl lg:text-5xl tracking-wide lowercase font-light transition-all duration-500 hover:bg-transparent hover:text-bone hover:font-semibold"
+                  className="text-3xl md:text-4xl lg:text-5xl tracking-wide lowercase font-light transition-all duration-500  hover:text-bone"
                   href={item.href}
                 >
                   {item.name}

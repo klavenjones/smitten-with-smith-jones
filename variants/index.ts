@@ -62,3 +62,18 @@ export const navItemOverlayVariant = {
     },
   },
 };
+
+export const fadeInOut = {
+  open: {
+    opacity: 0,
+    transition: {
+      ease: 'easeOut',
+    },
+  },
+  closed: {
+    opacity: 1,
+    transition: {
+      ease: 'easeIn',
+    },
+  },
+};
