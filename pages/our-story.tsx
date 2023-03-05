@@ -1,4 +1,4 @@
-import { Layout } from '@/components';
+import { Navigation } from '@/components';
 import Head from 'next/head';
 
 export default function OurStory() {
@@ -10,7 +10,9 @@ export default function OurStory() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout />
+      <header>
+        <Navigation page="details" />
+      </header>
       <h1>Our Story</h1>
     </>
   );

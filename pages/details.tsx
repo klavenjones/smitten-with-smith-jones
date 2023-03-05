@@ -13,21 +13,50 @@ export default function Details() {
       <header>
         <Navigation page="details" />
       </header>
-      <section className="hero min-h-[65vh] bg-background">
+      <section className="hero min-h-[50vh] bg-background">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-7xl lg:text-[7rem] text-bone">Reception</h1>
           </div>
         </div>
       </section>
-      <main className="px-4 pt-20">
+      <main className="px-4 py-20 min-h-screen">
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
           <div className="text-center text-tertiary">
             <h1 className="text-bone text-6xl lg:text-7xl">July 28, 2023</h1>
-            <p className="pt-10 text-3xl uppercase font-semibold">Julliette</p>
+            <h2 className="pt-10 text-3xl uppercase font-semibold">Julliette</h2>
             <div className="pt-4">
+              <p className="text-xl font-normal">6:00 PM - 12:00AM</p>
               <p className="text-xl font-light">135 N. 5th Street</p>
-              <p className="text-xl font-light">Brooklyn, NY</p>
+              <p className="text-xl font-normal">Brooklyn, NY</p>
+            </div>
+            <div className="pt-8 max-w-lg">
+              <p className="italic leading-8">
+                Attire: Semi-Formal. Bright, Summer attire - Suits, gowns, tuxes and cocktail dresses is strongly
+                encouraged!
+              </p>
+            </div>
+            
+            <div className="pt-8 max-w-lg">
+              <p className="text-base font-light leading-8">
+                Even though we made our vows in Paris, we would still like to celebrate our union with all of you! architecto sapiente aliquid eos, aliquam
+                id iure exercitationem corporis ducimus autem fugit, eveniet veritatis molestias iusto animi. Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Ex dolorem similique praesentium provident minima
+                ratione suscipit obcaecati ad esse perferendis dicta numquam voluptates.
+              </p>
+              <p className="text-base font-light leading-8">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex dolorem similique praesentium provident
+                minima ratione suscipit obcaecati ad esse perferendis dicta numquam voluptates.
+              </p>
+            </div>
+            <div className="pt-8 mx-auto grid grid-cols-2 gap-3 max-w-sm">
+              <button className="btn btn-outline rounded-none text-tertiary border-tertiary italic font-light hover:bg-bone">
+                Directions
+              </button>
+              <button className="btn btn-outline rounded-none border-tertiary italic font-light hover:bg-bone ">
+                Add To Calander
+              </button>
+              {/* <button className="btn btn-outline">Rsvp</button> */}
             </div>
           </div>
         </div>

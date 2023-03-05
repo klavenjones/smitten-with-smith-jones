@@ -47,6 +47,10 @@ nav li a {
   animation: scroll-right 10s linear infinite;
 }
 
+.sf-pro-italic {
+  font-family: 'SF Pro Italic', Arial, Helvetica, sans-serif;
+}
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0);

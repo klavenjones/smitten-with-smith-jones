@@ -51,7 +51,7 @@ export function NavMenu({ isOpen }: NavMenuProps) {
       initial={false}
       animate={isOpen ? 'open' : 'closed'}
       variants={containerVariant}
-      className="h-screen w-full absolute top-0 flex z-10"
+      className="h-screen w-full fixed top-0 flex z-10"
     >
       <AnimatedContainer
         initial={false}
