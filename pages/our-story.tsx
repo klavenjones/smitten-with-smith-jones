@@ -13,7 +13,24 @@ export default function OurStory() {
       <header>
         <Navigation page="details" />
       </header>
-      <h1>Our Story</h1>
+      <section className="h-screen py-20">
+        <div className="border-2">
+          <div className="border-2 grid grid-cols-2 gap-5">
+            <div className="w-[200px] relative">
+              <div className="min-w-1/2">
+                <img className="w-full aspect-[3/4] object-fill" src="/black_couple_1.jpeg" alt="Black Couple" />
+              </div>
+              <div>
+                <img
+                  className="top-[70%] left-[60%] absolute aspect-3/4 object-fill"
+                  src="/black_couple_1.jpeg"
+                  alt="Black Couple"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
