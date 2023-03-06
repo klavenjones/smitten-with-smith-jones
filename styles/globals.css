@@ -5,7 +5,8 @@
 @import url('./fonts.css');
 
 body {
-  font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+  /* font-family: 'SF Pro', Arial, Helvetica, sans-serif; */
+  font: 15px/1.6rem 'SF Pro', Arial, Helvetica, sans-serif;
   @apply h-screen w-screen relative bg-project-white;
 }
 
@@ -16,6 +17,10 @@ h4,
 h5,
 nav li a {
   font-family: 'NewYork', Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+  font: 15px/1rem;
 }
 
 .menu {
@@ -37,6 +42,13 @@ nav li a {
 
 .menu-image {
   background-image: url('/brittani_and_klaven_header.jpg');
+}
+
+.our-story-img {
+  background-image: url('/brittani_and_klaven_header.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .scroll-left {
