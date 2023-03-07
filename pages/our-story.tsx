@@ -13,10 +13,10 @@ export default function OurStory() {
       <header>
         <Navigation page="details" />
       </header>
-      <section className="project-white py-10 mt-14 min-h-[calc(100vh_-_120px)]">
+      <section className="project-white  py-10 mt-14 min-h-[calc(100vh_-_120px)]">
         <div className="block mb-5 px-5 pt-5 pb-0 max-w-[1190px] mx-auto sm:flex sm:items-center sm:justify-start  sm:px-10 sm:pt-4 sm:mb-10">
           <div className="min-h-[69.47vh] relative sm:inline-block sm:align-middle sm:min-w-[430px] sm:w-[min(100%, 430px)] sm:min-h-[645px]">
-            <div className="our-story-img absolute bg-cover top-0 left-0 bottom-0 w-full" />
+            <div className="our-story-img-container early_dating_one absolute bg-cover top-0 left-0 bottom-0 filter brightness-[88%] saturate-[90%] hue-rotate-0 w-full" />
           </div>
 
           <div className="text-tertiary mt-10 my-5 mx-auto sm:mx-0 max-w-[90%] sm:px-10  sm:justify-center sm:inline-flex sm:flex-col sm:max-w-[500px]">
@@ -34,7 +34,7 @@ export default function OurStory() {
         </div>
         <div className="block mb-5 px-5 pt-5 pb-0 max-w-[1190px] mx-auto sm:flex sm:flex-row-reverse sm:items-center sm:justify-start  sm:px-10 sm:pt-4 sm:mb-10">
           <div className="min-h-[69.47vh] relative sm:inline-block sm:align-middle sm:min-w-[430px] sm:w-[min(100%, 430px)] sm:min-h-[645px]">
-            <div className="our-story-img absolute bg-cover top-0 left-0 bottom-0 filter brightness-[88%] saturate-[%] hue-rotate-0 w-full" />
+            <div className="our-story-img-container proposal-img absolute bg-cover top-0 left-0 bottom-0 filter brightness-[88%] saturate-[90%] hue-rotate-0 w-full" />
           </div>
 
           <div className="text-tertiary mt-10 my-5 mx-auto sm:mx-0 max-w-[90%] sm:px-10  sm:justify-center sm:inline-flex sm:flex-col sm:max-w-[500px]">
@@ -52,7 +52,7 @@ export default function OurStory() {
         </div>
         <div className="block mb-5 px-5 pt-5 pb-0 max-w-[1190px] mx-auto sm:flex sm:items-center sm:justify-start  sm:px-10 sm:pt-4 sm:mb-10">
           <div className="min-h-[69.47vh] relative sm:inline-block sm:align-middle sm:min-w-[430px] sm:w-[min(100%, 430px)] sm:min-h-[645px]">
-            <div className="our-story-img absolute bg-cover top-0 left-0 bottom-0 filter brightness-[88%] saturate-[%] hue-rotate-0 w-full" />
+            <div className="our-story-img-container how-we-met-img absolute bg-cover top-0 left-0 bottom-0 filter brightness-[88%] saturate-[90%] hue-rotate-0 w-full" />
           </div>
 
           <div className="text-tertiary mt-10 my-5 mx-auto sm:mx-0 max-w-[90%] sm:px-10  sm:justify-center sm:inline-flex sm:flex-col sm:max-w-[500px]">

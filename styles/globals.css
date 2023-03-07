@@ -36,19 +36,30 @@ p {
 }
 
 .hero-image {
-  background-image: url('/brittani_and_klaven_header.jpg');
+  background-image: url('/brittani_and_klaven_header.webp');
   @apply min-h-[60vh] lg:min-h-[90vh] xl:min-h-screen;
 }
 
 .menu-image {
-  background-image: url('/brittani_and_klaven_header.jpg');
+  background-image: url('/brittani_and_klaven_header.webp');
 }
 
-.our-story-img {
-  background-image: url('/louvre_brittani&klaven1.jpg');
-  background-position: center center;
+.our-story-img-container {
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.how-we-met-img {
+  background-image: url('/louvre_brittaniklaven1.webp');
+}
+
+.proposal-img {
+  background-image: url('/proposal.jpeg');
+}
+
+.early_dating_one {
+  background-image: url('/early_date.jpeg');
 }
 
 .scroll-left {
