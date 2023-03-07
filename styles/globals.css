@@ -6,7 +6,7 @@
 
 body {
   /* font-family: 'SF Pro', Arial, Helvetica, sans-serif; */
-  font: 15px/1.6rem 'SF Pro', Arial, Helvetica, sans-serif;
+  font: 15px/1.6em 'SF Pro', Arial, Helvetica, sans-serif;
   @apply h-screen w-screen relative bg-project-white;
 }
 
@@ -45,7 +45,7 @@ p {
 }
 
 .our-story-img {
-  background-image: url('/brittani_and_klaven_header.jpg');
+  background-image: url('/louvre_brittani&klaven1.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
