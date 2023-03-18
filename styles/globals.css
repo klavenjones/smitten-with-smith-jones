@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 /* Custom Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('./fonts.css');
 
 body {
   /* font-family: 'SF Pro', Arial, Helvetica, sans-serif; */
-  font: 15px/1.6em 'SF Pro', Arial, Helvetica, sans-serif;
+  font: 15px/1.6em 'Lora', serif;
   @apply h-screen w-screen relative bg-project-white;
 }
 
@@ -14,13 +16,16 @@ h1,
 h2,
 h3,
 h4,
-h5,
-nav li a {
-  font-family: 'NewYork', Georgia, 'Times New Roman', Times, serif;
+h5 {
+  font-family: 'White Garden Wide', Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
   font: 15px/1rem;
+}
+
+.sub-title {
+  font-family: 'Lora', serif;
 }
 
 .menu {
@@ -36,12 +41,12 @@ p {
 }
 
 .hero-image {
-  background-image: url('/brittani_and_klaven_header.webp');
+  background-image: url('/img/bw-eiffel.jpg');
   @apply min-h-[60vh] lg:min-h-[90vh] xl:min-h-screen;
 }
 
 .menu-image {
-  background-image: url('/brittani_and_klaven_header.webp');
+  background-image: url('/img/bw-eiffel.jpg');
   @apply filter brightness-[88%] saturate-[30%] hue-rotate-0;
 }
 
@@ -52,15 +57,15 @@ p {
 }
 
 .how-we-met-img {
-  background-image: url('/louvre_brittaniklaven1.webp');
+  background-image: url('/img/louvre_brittaniklaven1.webp');
 }
 
 .proposal-img {
-  background-image: url('/proposal.jpeg');
+  background-image: url('/img/proposal.jpeg');
 }
 
 .early_dating_one {
-  background-image: url('/early_date.jpeg');
+  background-image: url('/img/early_date.jpeg');
 }
 
 .scroll-left {

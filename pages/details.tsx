@@ -13,18 +13,18 @@ export default function Details() {
       <header>
         <Navigation page="details" />
       </header>
-      <section className="hero min-h-[50vh] bg-background">
-        <div className="hero-content text-center">
+      <section className="hero min-h-[50vh] bg-secondary">
+        <div className="hero-content text-center min-w-full">
           <div className="max-w-md">
-            <h1 className="text-7xl lg:text-[7rem] text-bone">Reception</h1>
+            <h1 className="text-7xl lg:text-[7rem] text-project-white">Reception</h1>
           </div>
         </div>
       </section>
-      <main className="px-4 py-20 min-h-screen">
+      <main className="px-4 py-20 min-h-screen bg-project-white">
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
-          <div className="text-center text-tertiary">
-            <h1 className="text-bone text-6xl lg:text-7xl">July 28, 2023</h1>
-            <h2 className="pt-10 text-3xl uppercase font-semibold">Juliette</h2>
+          <div className="text-center text-gray-700">
+            <h1 className="text-typography text-6xl lg:text-7xl">July 28, 2023</h1>
+            <h2 className="sub-title pt-10 text-3xl uppercase font-semibold">Juliette</h2>
             <div className="pt-4">
               <p className="text-xl font-normal">6:00 PM - 11:00PM</p>
               <p className="text-xl font-normal">135 N. 5th Street</p>
@@ -44,10 +44,10 @@ export default function Details() {
               </p>
             </div>
             <div className="pt-8 mx-auto grid grid-cols-2 gap-3 max-w-sm">
-              <button className="btn btn-outline rounded-none text-tertiary border-tertiary italic font-light hover:bg-bone">
+              <button className="btn btn-outline rounded-none text-typography border-tertiary italic font-light hover:bg-primary hover:border-primary">
                 Directions
               </button>
-              <button className="btn btn-outline rounded-none border-tertiary italic font-light hover:bg-bone ">
+              <button className="btn btn-outline rounded-none border-tertiary italic font-light hover:bg-primary hover:border-primary">
                 Add To Calander
               </button>
               {/* <button className="btn btn-outline">Rsvp</button> */}

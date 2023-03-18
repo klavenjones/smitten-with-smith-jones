@@ -14,7 +14,7 @@ export function Navigation({ page }: NavigationProps) {
     <div
       className={classNames(
         {
-          'text-tertiary': !homePage,
+          'text-gray-700': !homePage,
         },
         { 'text-project-white': homePage }
       )}
@@ -29,7 +29,7 @@ export function Navigation({ page }: NavigationProps) {
         className={classNames(
           'w-full flex items-center justify-center py-0.5 px-4 md:px-6 fixed top-0 z-50',
           {
-            'bg-bone': !homePage,
+            'bg-project-white': !homePage,
           },
           { 'bg-transparent': homePage }
         )}

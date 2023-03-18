@@ -15,7 +15,7 @@ export function MenuToggle({ toggle, isOpen }: MenuToggleProps): JSX.Element {
         className={classNames(
           'relative transition-all duration-100 w-10 h-10 hover:bg-transparent',
           {
-            'text-tertiary': isOpen,
+            'text-typography': isOpen,
           },
           { 'text-current': !isOpen }
         )}

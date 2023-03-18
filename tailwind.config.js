@@ -11,12 +11,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#8098ae',
-        'secondary': '#616C75',
-        'tertiary': '#544E49',
-        'typography': '#f0f5f7',
-        'project-white': '#fdfdfe',
+        'primary': '#b9cfdd',
+        'secondary': '#8fa1ab',
+        'tertiary': '#d9dbda',
+        'typography': '#0c0e0d',
+        'project-white': '#fafcfb',
         'background': '#f3f0eb',
+        'light-blue': '#8BAFC8',
         'bone': '#ccc5b7'
       },
       animation: {

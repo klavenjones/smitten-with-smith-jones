@@ -129,3 +129,23 @@
   font-style: 'normal';
   font-weight: 900;
 }
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../assets/fonts/SF-Pro-Text-Black.otf');
+  font-style: 'normal';
+
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'White Garden';
+  src: url('../assets/fonts/WhiteGarden-Regular.otf');
+  font-style: 'normal';
+}
+
+@font-face {
+  font-family: 'White Garden Wide';
+  src: url('../assets/fonts/WhiteGardenWide-Regular.otf');
+  font-style: 'normal';
+}
