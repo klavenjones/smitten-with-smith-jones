@@ -21,13 +21,22 @@ export default function OurStory() {
 
           <div className="text-typography mt-10 my-5 mx-auto sm:mx-0 max-w-[90%] sm:px-10  sm:justify-center sm:inline-flex sm:flex-col sm:max-w-[500px]">
             <h1 className="text-4xl text-center sm:text-left">How We Met</h1>
-            <div className="mt-4 align-top">
+            <div className="mt-4 align-top text-gray-500 space-y-5">
               <p className="text-center text-base font-light leading-relaxed sm:text-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed consequuntur tenetur sequi
-                similique illo eos nobis nisi atque consequatur voluptate nostrum iure quod laboriosam dolorem, iusto
-                nulla esse beatae? Itaque eos consequuntur iure dolorum animi aspernatur ipsa vero nam quisquam unde,
-                ullam incidunt quos? Accusamus non recusandae sequi excepturi dolorem ullam praesentium facilis eligendi
-                nemo sit? Ipsum, aspernatur blanditiis.
+                Klaven came across Brittani&apos;s profile on Plenty Of Fish (POF) and slid into her DMs with
+                compliments of her beauty. They quickly hit it off and went on their first date at a trendy Peruvian
+                restaurant in Chelsea. Little did he know, she had only created her account, because her friends had
+                pressured her into trying online dating. So Klaven and Brittani met with a little luck.
+              </p>
+              <p className="text-center text-base font-light leading-relaxed sm:text-left">
+                As they continued to date, Klaven realized that Brittani was the one for him when she cooked
+                Thanksgiving dinner for him because she felt bad that he had to work on the holiday. Her kindness and
+                compassion left a lasting impression on him, and he knew she was a keeper.
+              </p>
+
+              <p className="text-center text-base font-thin leading-relaxed sm:text-left">
+                After a few Baecations, and dozens of Bottomless Brunches together. They are grateful for that chance
+                encounter that brought them together and for the love and happiness they share.
               </p>
             </div>
           </div>
@@ -39,13 +48,24 @@ export default function OurStory() {
 
           <div className="text-typography  mt-10 my-5 mx-auto sm:mx-0 max-w-[90%] sm:px-10  sm:justify-center sm:inline-flex sm:flex-col sm:max-w-[500px]">
             <h1 className="text-4xl text-center sm:text-right">The Proposal</h1>
-            <div className="mt-4 align-top">
+            <div className="mt-4 align-top text-gray-500 space-y-5">
               <p className="text-center text-base font-light leading-relaxed sm:text-right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed consequuntur tenetur sequi
-                similique illo eos nobis nisi atque consequatur voluptate nostrum iure quod laboriosam dolorem, iusto
-                nulla esse beatae? Itaque eos consequuntur iure dolorum animi aspernatur ipsa vero nam quisquam unde,
-                ullam incidunt quos? Accusamus non recusandae sequi excepturi dolorem ullam praesentium facilis eligendi
-                nemo sit? Ipsum, aspernatur blanditiis.
+                Klaven had been thinking about proposing to Brittani for some time, and with her birthday coming up, he
+                knew it was the perfect opportunity. He enlisted the help of Brittani&apos;s friends, Olga and
+                Elisabetta, to help him plan the perfect proposal.
+              </p>
+              <p className="text-center text-base font-light leading-relaxed sm:text-right">
+                Klaven and Betta planned to scour Brooklyn Bridge park for the perfect spot, luckily Betta found it
+                within a few steps. They came across the beautiful heart statue at the entrance of the Time Out market.
+                It was perfect. Klaven felt relieved that he had found the perfect spot, with the help of Betta.
+              </p>
+
+              <p className="text-center text-base font-thin leading-relaxed sm:text-right">
+                The night before the proposal, Klaven was shook! Brittani planned a girl&apos;s night out with her squad
+                (The Goons, as Klay calls them) for her birthday and then spent all night building a new bookshelf when
+                she got home. Klaven was worried she&apos;d be too tired for their date. Luckily, Brittani was ok, and
+                didn&apos;t flake. The next day, after a delicious brunch in the city, Klaven took Brittani to the Time
+                Out market and proposed to her. She said yes! To her surprise, her friends were all there to celebrate.
               </p>
             </div>
           </div>
@@ -57,13 +77,25 @@ export default function OurStory() {
 
           <div className="text-typography  mt-10 my-5 mx-auto sm:mx-0 max-w-[90%] sm:px-10  sm:justify-center sm:inline-flex sm:flex-col sm:max-w-[500px]">
             <h1 className="text-4xl text-center sm:text-left">The Elopment</h1>
-            <div className="mt-4 align-top">
+            <div className="mt-4 align-top text-gray-500 space-y-5">
               <p className="text-center text-base font-light leading-relaxed sm:text-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed consequuntur tenetur sequi
-                similique illo eos nobis nisi atque consequatur voluptate nostrum iure quod laboriosam dolorem, iusto
-                nulla esse beatae? Itaque eos consequuntur iure dolorum animi aspernatur ipsa vero nam quisquam unde,
-                ullam incidunt quos? Accusamus non recusandae sequi excepturi dolorem ullam praesentium facilis eligendi
-                nemo sit? Ipsum, aspernatur blanditiis.
+                Brittani had always dreamed of eloping to Paris, and Klaven was more than happy to make her dream come
+                true. When he proposed, she knew exactly where she wanted to go to elope, and they began planning their
+                trip to the city of love.
+              </p>
+              <p className="text-center text-base font-light leading-relaxed sm:text-left">
+                During their week-long trip to Paris, Klaven and Brittani visited Disneyland Paris where they enjoyed
+                several attractions and shows. They rode some of the rides and watched the famous Lion King show, which
+                left them feeling nostalgic and happy.
+              </p>
+              <p className="text-center text-base font-thin leading-relaxed sm:text-left">
+                In a romantic and intimate ceremony overlooking the Eiffel Tower, Klaven and Brittani exchanged their
+                vows and became husband and wife. It was everything Brittani had always dreamed of, and she was grateful
+                to be able to share such a special moment with the love of her life.
+              </p>
+              <p className="text-center text-base font-thin leading-relaxed sm:text-left">
+                Although they eloped, Klaven and Brittani still plan to celebrate their love with their friends and
+                family. They are excited to throw a big party and share their happiness with their loved ones.
               </p>
             </div>
           </div>

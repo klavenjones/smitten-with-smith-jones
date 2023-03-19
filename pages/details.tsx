@@ -35,13 +35,19 @@ export default function Details() {
             </div>
 
             <div className="pt-8 max-w-lg">
-              <p className="text-base font-light leading-8">
-                Even though we made our vows in Paris, we would still like to celebrate our union with all of you!
-                architecto sapiente aliquid eos, aliquam id iure exercitationem corporis ducimus autem fugit, eveniet
-                veritatis molestias iusto animi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex dolorem
-                similique praesentium provident minima ratione suscipit obcaecati ad esse perferendis dicta numquam
-                voluptates.
+              <p className="text-base font-light text-gray-500 leading-8">
+                Even though we made our vows in Paris, we would still like to celebrate our union with all of you! Our
+                wedding reception, will be at the <span className="font-bold italic text-typography">Juliette</span> on{' '}
+                <span className="font-bold italic text-typography">Friday, July 28th, 2023</span>. We respectfully ask
+                that this be an <span className="font-bold">adult only</span> wedding reception (18+). We thank you for
+                attending our reception.{' '}
+                <span className="font-bold italic text-typography">Please RSVP by June 16th, 2023</span>
               </p>
+              <div className="mt-8">
+                <p className="italic">
+                  **Please check this page frequently as it may be updated with more details in the coming weeks**
+                </p>
+              </div>
             </div>
             <div className="pt-8 mx-auto grid grid-cols-2 gap-3 max-w-sm">
               <button className="btn btn-outline rounded-none text-typography border-tertiary italic font-light hover:bg-primary hover:border-primary">

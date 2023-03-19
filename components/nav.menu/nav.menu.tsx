@@ -29,17 +29,17 @@ const navLinks = [
     name: 'Questions',
   },
   {
-    href: '/photos',
-    name: 'Photos',
+    href: '/gallery',
+    name: 'Gallery',
   },
-  {
-    href: '/registry',
-    name: 'Registry',
-  },
-  {
-    href: '/rsvp',
-    name: 'RSVP',
-  },
+  // {
+  //   href: '/registry',
+  //   name: 'Registry',
+  // },
+  // {
+  //   href: '/rsvp',
+  //   name: 'RSVP',
+  // },
 ];
 
 // eslint-disable-next-line
