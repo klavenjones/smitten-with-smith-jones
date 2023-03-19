@@ -39,8 +39,8 @@ export default function Details() {
                 Even though we made our vows in Paris, we would still like to celebrate our union with all of you! Our
                 wedding reception, will be at the <span className="font-bold italic text-typography">Juliette</span> on{' '}
                 <span className="font-bold italic text-typography">Friday, July 28th, 2023</span>. We respectfully ask
-                that this be an <span className="font-bold">adult only</span> wedding reception (18+). We thank you for
-                attending our reception.{' '}
+                that this be an <span className="font-bold text-typography">adult only</span> wedding reception (18+).
+                We thank you for attending our reception.{' '}
                 <span className="font-bold italic text-typography">Please RSVP by June 16th, 2023</span>
               </p>
               <div className="mt-8">

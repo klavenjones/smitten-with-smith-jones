@@ -4,12 +4,12 @@
 
 export const photoVariant = {
   open: { opacity: 1, y: 0, transition: { type: 'easeIn', duration: 0.5 } },
-  closed: { opacity: 0, y: 300, transition: { type: 'easeIn', duration: 0.5 } },
+  closed: { opacity: 0, y: 400, transition: { type: 'easeIn', duration: 0.5 } },
 };
 
 export const menuVariant = {
   open: { opacity: 1, y: 0, transition: { type: 'easeIn', duration: 0.5 } },
-  closed: { opacity: 0, y: -300, transition: { type: 'easeIn', duration: 0.5 } },
+  closed: { opacity: 0, y: -500, transition: { type: 'easeIn', duration: 0.5 } },
 };
 
 export const containerVariant = {
@@ -31,7 +31,7 @@ export const navItemVariant = {
     y: 0,
     opacity: 1,
     transition: {
-      y: { stiffness: 1000, velocity: -100 },
+      y: { stiffness: 1000, velocity: -300 },
       staggerChildren: 0.15,
     },
   },
@@ -49,7 +49,7 @@ export const navItemVariant = {
 export const navItemOverlayVariant = {
   open: {
     display: 'block',
-    transform: 'translateY(100%)',
+    transform: 'translateY(200%)',
     transition: {
       ease: 'easeIn',
     },
