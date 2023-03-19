@@ -43,6 +43,15 @@ export default function Details() {
                 We thank you for attending our reception.{' '}
                 <span className="font-bold italic text-typography">Please RSVP by June 16th, 2023</span>
               </p>
+              <p className="mt-4 text-base font-light text-gray-500 leading-8">
+                If you have any questions feel free to email us at{' '}
+                <a
+                  className="font-bold text-typography underline hover:text-primary"
+                  href="mailto:brittaniandklaven@gmail.com"
+                >
+                  brittaniandklaven@gmail.com
+                </a>
+              </p>
               <div className="mt-8">
                 <p className="italic">
                   **Please check this page frequently as it may be updated with more details in the coming weeks**

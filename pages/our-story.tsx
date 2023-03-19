@@ -61,9 +61,9 @@ export default function OurStory() {
               </p>
 
               <p className="text-center text-base font-thin leading-relaxed sm:text-right">
-                The night before the proposal, Klaven was shook! Brittani planned a girl&apos;s night out with her squad
-                (The Goons, as Klay calls them) for her birthday and then spent all night building a new bookshelf when
-                she got home. Klaven was worried she&apos;d be too tired for their date. Luckily, Brittani was ok, and
+                The night before the proposal, Klaven was shook! Brittani went on a girl&apos;s night out with her squad
+                for her birthday (The Goons, as Klay calls them) and when she got home, she spent all night building a
+                new bookshelf. Klaven was worried she&apos;d be too tired for their date. Luckily, Brittani was ok, and
                 didn&apos;t flake. The next day, after a delicious brunch in the city, Klaven took Brittani to the Time
                 Out market and proposed to her. She said yes! To her surprise, her friends were all there to celebrate.
               </p>
