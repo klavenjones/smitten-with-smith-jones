@@ -1,4 +1,4 @@
-import { Layout, Navigation } from '@/components';
+import { Navigation } from '@/components';
 import Head from 'next/head';
 
 export default function Travel() {
@@ -42,7 +42,7 @@ export default function Travel() {
             Will there be vegetarian options available?
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl">
-            Yes, we will have a variety of options to meet everyone's needs.
+            Yes, we will have a variety of options to meet everyone&apos;s needs.
           </p>
         </div>
         <div className="px-4 py-10">
