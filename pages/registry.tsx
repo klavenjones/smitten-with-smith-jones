@@ -24,7 +24,7 @@ export default function Gallery() {
       <main className="px-4 py-20 bg-project-white">
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
           <div>
-            <h1 className="sub-title text-2xl sm:text-3xl">Thank you from the bottom of our hearts!</h1>
+            <h1 className="sub-title text-xl sm:text-2xl text-center">Thank you from the bottom of our hearts!</h1>
           </div>
         </div>
       </main>
