@@ -21,7 +21,7 @@ export default function Gallery() {
           </div>
         </div>
       </section>
-      <main className="px-4 py-20 bg-project-white">
+      <main className="px-10 pt-20 pb-10 bg-project-white">
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
           <div>
             <h1 className="sub-title text-xl sm:text-2xl text-center">Thank you from the bottom of our hearts!</h1>
