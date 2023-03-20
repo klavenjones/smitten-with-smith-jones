@@ -33,9 +33,13 @@ const navLinks = [
     name: 'Gallery',
   },
   // {
-  //   href: '/registry',
+  //   href: 'https://registry.theknot.com/klaven-jones-brittani-smith-july-2023-ny/59489454',
   //   name: 'Registry',
   // },
+  {
+    href: '/registry',
+    name: 'Registry',
+  },
   // {
   //   href: '/rsvp',
   //   name: 'RSVP',
