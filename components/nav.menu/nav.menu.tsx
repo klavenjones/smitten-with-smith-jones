@@ -32,18 +32,14 @@ const navLinks = [
     href: '/gallery',
     name: 'Gallery',
   },
-  // {
-  //   href: 'https://registry.theknot.com/klaven-jones-brittani-smith-july-2023-ny/59489454',
-  //   name: 'Registry',
-  // },
   {
     href: '/registry',
     name: 'Registry',
   },
-  // {
-  //   href: '/rsvp',
-  //   name: 'RSVP',
-  // },
+  {
+    href: 'https://brittaniandklaven.rsvpify.com',
+    name: 'RSVP',
+  },
 ];
 
 // eslint-disable-next-line
@@ -79,12 +75,22 @@ export function NavMenu({ isOpen }: NavMenuProps) {
                 tabIndex={i}
               >
                 <motion.div variants={navItemOverlayVariant} className="bg-project-white h-full w-full absolute" />
-                <Link
-                  className="text-3xl md:text-4xl lg:text-5xl tracking-wide lowercase font-light transition-all duration-500  hover:text-primary"
-                  href={item.href}
-                >
-                  {item.name}
-                </Link>
+                {item.name === 'rsvp' ? (
+                  <Link
+                    className="text-3xl md:text-4xl lg:text-5xl tracking-wide lowercase font-light transition-all duration-500  hover:text-primary"
+                    href={item.href}
+                    target="_blank"
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <Link
+                    className="text-3xl md:text-4xl lg:text-5xl tracking-wide lowercase font-light transition-all duration-500  hover:text-primary"
+                    href={item.href}
+                  >
+                    {item.name}
+                  </Link>
+                )}
               </motion.li>
             )
           )}
