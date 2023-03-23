@@ -1,5 +1,7 @@
 import { Navigation } from '@/components';
+import { saveCalender } from '@/util/saveCalendar';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Details() {
   return (
@@ -59,10 +61,17 @@ export default function Details() {
               </div>
             </div>
             <div className="pt-8 mx-auto grid grid-cols-2 gap-3 max-w-sm">
-              <button className="btn btn-outline rounded-none text-typography border-tertiary italic font-light hover:bg-primary hover:border-primary">
+              <Link
+                target="_blank"
+                href={'https://goo.gl/maps/4LdNAwRVrGY5zRAL7'}
+                className="btn btn-outline rounded-none text-typography border-tertiary italic font-light hover:bg-primary hover:border-primary"
+              >
                 Directions
-              </button>
-              <button className="btn btn-outline rounded-none border-tertiary italic font-light hover:bg-primary hover:border-primary">
+              </Link>
+              <button
+                onClick={saveCalender}
+                className="btn btn-outline rounded-none border-tertiary italic font-light hover:bg-primary hover:border-primary"
+              >
                 Add To Calander
               </button>
               {/* <button className="btn btn-outline">Rsvp</button> */}
