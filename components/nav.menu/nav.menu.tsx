@@ -75,7 +75,7 @@ export function NavMenu({ isOpen }: NavMenuProps) {
                 tabIndex={i}
               >
                 <motion.div variants={navItemOverlayVariant} className="bg-project-white h-full w-full absolute" />
-                {item.name === 'rsvp' ? (
+                {item.name === 'RSVP' ? (
                   <Link
                     className="text-3xl md:text-4xl lg:text-5xl tracking-wide lowercase font-light transition-all duration-500  hover:text-primary"
                     href={item.href}
