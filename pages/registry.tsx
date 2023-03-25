@@ -38,11 +38,11 @@ export default function Gallery() {
             <p className="uppercase tracking-widest">New Home Fund</p>
           </Link>
           <Link
-            href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/552398303?eventType=Wedding"
+            href="https://www.amazon.com/wedding/klaven-jones-brittani-smith-jones--july-2023/registry/3E14FD53HW84W"
             target="_blank"
             className="btn btn-outline rounded-none flex items-center justify-center min-h-[300px] border-2 text-typography border-tertiary hover:bg-primary hover:border-primary"
           >
-            <p className="uppercase tracking-widest">Bed Bath & Beyond</p>
+            <p className="uppercase tracking-widest">Amazon</p>
           </Link>
         </div>
       </section>

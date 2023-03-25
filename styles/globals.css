@@ -41,12 +41,12 @@ p {
 }
 
 .hero-image {
-  background-image: url('/img/bw-eiffel.jpg');
+  background-image: url('/img/bw-eiffel.webp');
   @apply min-h-[60vh] lg:min-h-[90vh] xl:min-h-screen;
 }
 
 .menu-image {
-  background-image: url('/img/bw-eiffel.jpg');
+  background-image: url('/img/bw-eiffel.webp');
   @apply filter brightness-[88%] saturate-[30%] hue-rotate-0;
 }
 
