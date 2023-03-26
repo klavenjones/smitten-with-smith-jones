@@ -1,7 +1,7 @@
-import { Navigation } from '@/components';
+import { Footer, Navigation } from '@/components';
 import Head from 'next/head';
 
-export default function Travel() {
+export default function Questions() {
   return (
     <>
       <Head>
@@ -20,7 +20,7 @@ export default function Travel() {
           </div>
         </div>
       </section>
-      <main className="px-4 min-h-screen bg-project-white text-center">
+      <main className="px-4 py-10 bg-project-white text-center">
         <div className="border-b-2 px-4 py-10">
           <h2 className="sub-title mb-4 font-bold text-2xl sm:text-3xl md:text-4xl">
             Are children allowed at the reception?
@@ -52,6 +52,7 @@ export default function Travel() {
           </p>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

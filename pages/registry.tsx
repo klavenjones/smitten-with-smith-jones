@@ -1,4 +1,4 @@
-import { Navigation } from '@/components';
+import { Footer, Navigation } from '@/components';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -28,7 +28,7 @@ export default function Gallery() {
           </div>
         </div>
       </main>
-      <section className="py-10 px-10 max-w-5xl mx-auto min-h-[40vh]">
+      <section className="py-20 px-10 max-w-5xl mx-auto min-h-[40vh]">
         <div className="grid gap-8 sm:grid-cols-2 min-w-lg mx-auto">
           <Link
             href="https://registry.theknot.com/klaven-jones-brittani-smith-july-2023-ny/59489454"
@@ -46,6 +46,7 @@ export default function Gallery() {
           </Link>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

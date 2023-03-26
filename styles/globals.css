@@ -9,7 +9,7 @@
 body {
   /* font-family: 'SF Pro', Arial, Helvetica, sans-serif; */
   font: 15px/1.6em 'Lora', serif;
-  @apply h-screen w-screen relative bg-project-white;
+  @apply h-screen w-screen relative bg-project-white overflow-x-hidden;
 }
 
 h1,

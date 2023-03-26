@@ -1,4 +1,4 @@
-import { Navigation } from '@/components';
+import { Footer, Navigation } from '@/components';
 import { saveCalender } from '@/util/saveCalendar';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -79,6 +79,7 @@ export default function Details() {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

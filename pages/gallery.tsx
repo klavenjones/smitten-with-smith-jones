@@ -1,4 +1,4 @@
-import { Navigation } from '@/components';
+import { Footer, Navigation } from '@/components';
 import Head from 'next/head';
 
 export default function Gallery() {
@@ -20,6 +20,7 @@ export default function Gallery() {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 }
