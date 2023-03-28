@@ -1,4 +1,5 @@
 import { Footer, Navigation } from '@/components';
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -14,21 +15,36 @@ export default function Gallery() {
       <header>
         <Navigation page="gallery" />
       </header>
-      <section className="hero min-h-[50vh] bg-secondary">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="hero min-h-[50vh] bg-secondary"
+      >
         <div className="hero-content text-center">
           <div className="max-w-full">
             <h1 className="text-4xl lg:text-6xl text-project-white">Registry</h1>
           </div>
         </div>
-      </section>
-      <main className="px-10 pt-20 pb-10 bg-project-white">
+      </motion.section>
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="px-10 pt-20 pb-10 bg-project-white"
+      >
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
           <div>
             <h1 className="sub-title text-2xl sm:text-3xl text-center">Thank you from the bottom of our hearts!</h1>
           </div>
         </div>
-      </main>
-      <section className="py-20 px-10 max-w-5xl mx-auto min-h-[40vh]">
+      </motion.main>
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="py-20 px-10 max-w-5xl mx-auto min-h-[40vh]"
+      >
         <div className="grid gap-8 sm:grid-cols-2 min-w-lg mx-auto">
           <Link
             href="https://registry.theknot.com/klaven-jones-brittani-smith-july-2023-ny/59489454"
@@ -45,7 +61,7 @@ export default function Gallery() {
             <p className="uppercase tracking-widest">Amazon</p>
           </Link>
         </div>
-      </section>
+      </motion.section>
       <Footer />
     </>
   );

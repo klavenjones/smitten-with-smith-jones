@@ -1,4 +1,5 @@
 import { Footer, Navigation } from '@/components';
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 
 export default function OurStory() {
@@ -13,7 +14,12 @@ export default function OurStory() {
       <header>
         <Navigation page="details" />
       </header>
-      <section className="bg-project-white py-10 mt-14 min-h-[calc(100vh_-_120px)]">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="bg-project-white py-10 mt-14 min-h-[calc(100vh_-_120px)]"
+      >
         <div className="block mb-5 px-5 pt-5 pb-0 max-w-[1190px] mx-auto sm:flex sm:items-center sm:justify-start  sm:px-10 sm:pt-4 sm:mb-10">
           <div className="min-h-[69.47vh] relative sm:inline-block sm:align-middle sm:min-w-[430px] sm:w-[min(100%, 430px)] sm:min-h-[645px]">
             <div className="our-story-img-container early_dating_one absolute bg-cover top-0 left-0 bottom-0 filter brightness-[88%] saturate-[90%] hue-rotate-0 w-full" />
@@ -100,7 +106,7 @@ export default function OurStory() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
       <Footer />
     </>
   );

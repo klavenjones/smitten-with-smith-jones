@@ -4,6 +4,7 @@ import { MenuToggle, NavMenu } from '..';
 import { NavigationProps } from '@/interfaces';
 import { fadeInOut } from '@/variants';
 import classNames from 'classnames';
+import Link from 'next/link';
 
 export function Navigation({ page }: NavigationProps) {
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -37,12 +38,14 @@ export function Navigation({ page }: NavigationProps) {
         <div className="navbar lg:px-0">
           {!homePage && (
             <motion.div animate={isOpen ? 'open' : 'closed'} variants={fadeInOut}>
-              <h1 className="block sm:hidden text-2xl">
-                B <span className="text-[2rem]">&</span> K
-              </h1>
-              <h1 className="hidden sm:block text-3xl">
-                Brittani <span className="text-[2.375rem]">&</span> Klaven
-              </h1>
+              <Link href="/">
+                <h1 className="block sm:hidden text-2xl">
+                  B <span className="text-[2rem]">&</span> K
+                </h1>
+                <h1 className="hidden sm:block text-3xl">
+                  Brittani <span className="text-[2.375rem]">&</span> Klaven
+                </h1>
+              </Link>
             </motion.div>
           )}
           <motion.div animate={isOpen ? 'open' : 'closed'} variants={fadeInOut}></motion.div>

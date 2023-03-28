@@ -1,8 +1,9 @@
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export function Footer() {
   return (
-    <footer>
+    <motion.footer initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.7 }}>
       <section className="hero py-10 min-h-[40vh] bg-gray-700">
         <div className="hero-content text-center">
           <div className="max-w-full space-y-6">
@@ -38,6 +39,6 @@ export function Footer() {
           </Link>
         </h1>
       </section>
-    </footer>
+    </motion.footer>
   );
 }

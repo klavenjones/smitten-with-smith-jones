@@ -1,4 +1,5 @@
 import { Footer, Navigation } from '@/components';
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 
 export default function Questions() {
@@ -13,14 +14,24 @@ export default function Questions() {
       <header>
         <Navigation page="questions" />
       </header>
-      <section className="hero min-h-[50vh] bg-secondary">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="hero min-h-[50vh] bg-secondary"
+      >
         <div className="hero-content text-center">
           <div className="max-w-full">
             <h1 className="text-4xl lg:text-6xl text-project-white">Frequently Asked Questions</h1>
           </div>
         </div>
-      </section>
-      <main className="px-4 py-10 bg-project-white text-center">
+      </motion.section>
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.75 }}
+        className="px-4 py-10 bg-project-white text-center"
+      >
         <div className="border-b-2 px-4 py-10">
           <h2 className="sub-title mb-4 font-bold text-2xl sm:text-3xl md:text-4xl">
             Are children allowed at the reception?
@@ -51,7 +62,7 @@ export default function Questions() {
             weeks.**
           </p>
         </div>
-      </main>
+      </motion.main>
       <Footer />
     </>
   );

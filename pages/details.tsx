@@ -1,5 +1,6 @@
 import { Footer, Navigation } from '@/components';
 import { saveCalender } from '@/util/saveCalendar';
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -15,14 +16,24 @@ export default function Details() {
       <header>
         <Navigation page="details" />
       </header>
-      <section className="hero min-h-[50vh] bg-secondary">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="hero min-h-[50vh] bg-secondary"
+      >
         <div className="hero-content text-center min-w-full">
           <div className="max-w-md">
             <h1 className="text-7xl lg:text-[7rem] text-project-white">Reception</h1>
           </div>
         </div>
-      </section>
-      <main className="px-4 py-20 min-h-screen bg-project-white">
+      </motion.section>
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="px-4 py-20 min-h-screen bg-project-white"
+      >
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
           <div className="text-center text-gray-700">
             <h1 className="text-typography text-6xl lg:text-7xl">July 28, 2023</h1>
@@ -43,12 +54,22 @@ export default function Details() {
                 <span className="font-bold italic text-typography">Friday, July 28th, 2023</span>. We respectfully ask
                 that this be an <span className="font-bold text-typography">adult only</span> wedding reception (18+).
                 We thank you for attending our reception.{' '}
-                <span className="font-bold italic text-typography">Please RSVP by June 16th, 2023</span>
+                <span className="font-bold italic text-typography">
+                  Please{' '}
+                  <Link
+                    target="_blank"
+                    className="transition-all duration-500 font-bold text-typography underline hover:text-primary"
+                    href="https://brittaniandklaven.rsvpify.com"
+                  >
+                    RSVP
+                  </Link>{' '}
+                  by June 16th, 2023
+                </span>
               </p>
               <p className="mt-4 text-base font-light text-gray-500 leading-8">
                 If you have any questions feel free to email us at{' '}
                 <a
-                  className="font-bold text-typography underline hover:text-primary"
+                  className="transition-all duration-500 font-bold text-typography underline hover:text-primary"
                   href="mailto:brittaniandklaven@gmail.com"
                 >
                   brittaniandklaven@gmail.com
@@ -78,7 +99,7 @@ export default function Details() {
             </div>
           </div>
         </div>
-      </main>
+      </motion.main>
       <Footer />
     </>
   );

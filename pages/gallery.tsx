@@ -1,4 +1,5 @@
 import { Footer, Navigation } from '@/components';
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 
 export default function Gallery() {
@@ -13,13 +14,18 @@ export default function Gallery() {
       <header>
         <Navigation page="gallery" />
       </header>
-      <main className="bg-project-white min-h-screen">
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
+        className="bg-project-white min-h-screen"
+      >
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto h-screen">
           <div className="text-center text-gray-700">
             <h2 className="sub-title text-typography text-6xl lg:text-7xl">Pictures Coming Soon!</h2>
           </div>
         </div>
-      </main>
+      </motion.main>
       <Footer />
     </>
   );
