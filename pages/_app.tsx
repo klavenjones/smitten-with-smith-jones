@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     const handleStart = () => setLoading(true);
-    const handleComplete = () => setTimeout(() => setLoading(false), 2000);
+    const handleComplete = () => setTimeout(() => setLoading(false), 1250);
 
     router.events.on('routeChangeStart', handleStart);
     router.events.on('routeChangeComplete', handleComplete);
@@ -21,8 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
       router.events.off('routeChangeComplete', handleComplete);
       router.events.off('routeChangeError', handleComplete);
     };
-    /* eslint-disable no-unused-vars */
   }, []);
-  /* eslint-enable no-unused-vars */
+
   return <div className="min-h-screen">{loading ? <PageLoader /> : <Component {...pageProps} />}</div>;
 }
