@@ -19,7 +19,7 @@ export default function Details() {
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5 }}
         className="hero min-h-[50vh] bg-secondary"
       >
         <div className="hero-content text-center min-w-full">
@@ -31,7 +31,7 @@ export default function Details() {
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5 }}
         className="px-4 py-20 min-h-screen bg-project-white"
       >
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">

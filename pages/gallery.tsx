@@ -17,7 +17,7 @@ export default function Gallery() {
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5 }}
         className="bg-project-white min-h-screen"
       >
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto h-screen">

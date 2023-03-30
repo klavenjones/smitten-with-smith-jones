@@ -17,7 +17,7 @@ export default function Questions() {
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5 }}
         className="hero min-h-[50vh] bg-secondary"
       >
         <div className="hero-content text-center">
@@ -29,7 +29,7 @@ export default function Questions() {
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.75 }}
+        transition={{ duration: 0.5 }}
         className="px-4 py-10 bg-project-white text-center"
       >
         <div className="border-b-2 px-4 py-10">
