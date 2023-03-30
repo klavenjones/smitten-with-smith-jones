@@ -3,10 +3,9 @@ import { motion } from 'framer-motion';
 export const PageLoader = () => {
   return (
     <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50">
-      <motion.div className="animate-bounce">
+      <motion.div>
         <svg
-          width="201px"
-          height="206px"
+          className="animate-bounce duration-150 h-[200px] w-[200px]"
           viewBox="0 0 201 206"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -100,6 +99,9 @@ export const PageLoader = () => {
             </g>
           </g>
         </svg>
+        <div className="mt-4 text-center">
+          <h1 className="text-5xl sm:text-7xl">Loading</h1>
+        </div>
       </motion.div>
     </div>
   );
