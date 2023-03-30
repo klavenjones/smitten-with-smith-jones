@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     const handleStart = () => setLoading(true);
-    const handleComplete = () => setTimeout(() => setLoading(false), 5000);
+    const handleComplete = () => setTimeout(() => setLoading(false), 2000);
 
     router.events.on('routeChangeStart', handleStart);
     router.events.on('routeChangeComplete', handleComplete);
