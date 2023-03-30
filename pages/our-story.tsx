@@ -17,7 +17,7 @@ export default function OurStory() {
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5 }}
         className="bg-project-white py-10 mt-14 min-h-[calc(100vh_-_120px)]"
       >
         <div className="block mb-5 px-5 pt-5 pb-0 max-w-[1190px] mx-auto sm:flex sm:items-center sm:justify-start  sm:px-10 sm:pt-4 sm:mb-10">

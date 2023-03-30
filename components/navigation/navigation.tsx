@@ -28,7 +28,7 @@ export function Navigation({ page }: NavigationProps) {
         variants={fadeInOut}
         ref={containerRef}
         className={classNames(
-          'w-full flex items-center justify-center py-0.5 px-4 md:px-6 fixed top-0 z-50',
+          'w-full flex items-center justify-center py-0.5 px-4 md:px-6 fixed top-0 z-30',
           {
             'bg-project-white': !homePage,
           },

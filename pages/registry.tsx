@@ -18,7 +18,7 @@ export default function Gallery() {
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5 }}
         className="hero min-h-[50vh] bg-secondary"
       >
         <div className="hero-content text-center">
@@ -30,7 +30,7 @@ export default function Gallery() {
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5 }}
         className="px-10 pt-20 pb-10 bg-project-white"
       >
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
@@ -42,7 +42,7 @@ export default function Gallery() {
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.5 }}
         className="py-20 px-10 max-w-5xl mx-auto min-h-[40vh]"
       >
         <div className="grid gap-8 sm:grid-cols-2 min-w-lg mx-auto">
