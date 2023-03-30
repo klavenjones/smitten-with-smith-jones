@@ -21,7 +21,8 @@ export default function App({ Component, pageProps }: AppProps) {
       router.events.off('routeChangeComplete', handleComplete);
       router.events.off('routeChangeError', handleComplete);
     };
+    /* eslint-disable no-unused-vars */
   }, []);
-
+  /* eslint-enable no-unused-vars */
   return <div className="min-h-screen">{loading ? <PageLoader /> : <Component {...pageProps} />}</div>;
 }
