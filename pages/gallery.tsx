@@ -45,7 +45,7 @@ export default function Gallery() {
                 key={`${image.filename}`}
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 2 }}
+                transition={{ duration: 0.5, delay: 0.7 }}
                 className="aspect-square"
               >
                 <img
