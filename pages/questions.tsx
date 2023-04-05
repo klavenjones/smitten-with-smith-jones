@@ -56,6 +56,7 @@ export default function Questions() {
             Yes, we will have a variety of options to meet everyone&apos;s needs.
           </p>
         </div>
+
         <div className="px-4 py-10">
           <p className="text-lg sm:text-xl md:text-2xl italic">
             **Please check this page frequently as it will be updated with more questions, we recieve in the coming

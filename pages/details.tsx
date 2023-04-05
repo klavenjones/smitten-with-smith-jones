@@ -1,5 +1,5 @@
 import { Footer, Navigation } from '@/components';
-import { saveCalender } from '@/util/saveCalendar';
+import { saveCalender } from '@/util';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -32,7 +32,7 @@ export default function Details() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="px-4 py-20 min-h-screen bg-project-white"
+        className="px-4 py-20 sm:py-40 bg-project-white"
       >
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
           <div className="text-center text-gray-700">
