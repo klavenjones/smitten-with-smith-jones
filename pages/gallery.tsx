@@ -1,5 +1,4 @@
 import { Footer, Navigation } from '@/components';
-import { getImageFilenames } from '@/util';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
@@ -15,6 +14,7 @@ export default function Gallery() {
     async function fetchImages() {
       const res = await fetch('/api/images');
       const filenames = await res.json();
+      //@ts-ignore
       const images = filenames.map((filename: any) => ({ filename }));
       setImages(images);
     }
@@ -42,6 +42,7 @@ export default function Gallery() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {images.map(image => (
               <motion.div
+                key={`${image.filename}`}
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 2 }}
