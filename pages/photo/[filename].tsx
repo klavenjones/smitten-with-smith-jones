@@ -1,15 +1,17 @@
 import { Footer, Navigation } from '@/components';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 interface ImageProps {
   filename: string;
 }
 
-export default function Gallery() {
+export default function Photo() {
   const [images, setImages] = useState<ImageProps[]>([]);
+  const router = useRouter();
+  const { filename } = router.query;
 
   useEffect(() => {
     async function fetchImages() {
@@ -22,8 +24,6 @@ export default function Gallery() {
     fetchImages();
   }, []);
 
-  console.log(images);
-
   return (
     <>
       <Head>
@@ -32,38 +32,29 @@ export default function Gallery() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
+      {/* <header>
         <Navigation page="gallery" />
-      </header>
+      </header> */}
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="bg-project-white min-h-screen py-10 sm:py-20 px-10"
+        className="bg-project-white min-h-screen flex items-center justify-center py-10 px-4"
       >
-        <div className="mx-auto max-w-screen-2xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {images.map(image => (
-              <motion.div
-                key={`${image.filename}`}
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="aspect-square"
-              >
-                <Link href={`/photo/${image.filename.replace('.webp', '')}`}>
-                  <img
-                    src={`img/${image.filename}`}
-                    alt={`${image.filename}`}
-                    className="w-full h-full object-cover object-center"
-                  />
-                </Link>
-              </motion.div>
-            ))}
+        <div className="mx-auto max-w-screen-2xl flex items-center justify-center">
+          <div className="max-w-[725px]">
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="aspect-auto"
+            >
+              <img src={`/img/${filename}.webp`} alt={``} className="w-full h-full object-cover object-center" />
+            </motion.div>
           </div>
         </div>
       </motion.main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

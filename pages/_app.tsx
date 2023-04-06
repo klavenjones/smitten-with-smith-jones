@@ -1,5 +1,6 @@
 import { PageLoader } from '@/components';
 import '@/styles/globals.css';
+import { AnimatePresence } from 'framer-motion';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -23,5 +24,15 @@ export default function App({ Component, pageProps }: AppProps) {
     };
   }, []);
 
-  return <div className="min-h-screen">{loading ? <PageLoader /> : <Component {...pageProps} />}</div>;
+  return (
+    <div className="min-h-screen">
+      {loading ? (
+        <PageLoader />
+      ) : (
+        <AnimatePresence mode="wait">
+          <Component {...pageProps} />
+        </AnimatePresence>
+      )}
+    </div>
+  );
 }
