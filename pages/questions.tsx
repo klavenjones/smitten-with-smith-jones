@@ -56,6 +56,21 @@ export default function Questions() {
             Yes, we will have a variety of options to meet everyone&apos;s needs.
           </p>
         </div>
+        <div className="border-b-2 px-4 py-10">
+          <h2 className="sub-title mb-4 font-bold text-2xl sm:text-3xl md:text-4xl">
+            Will I be able to bring a plus one?
+          </h2>
+          <p className="text-lg sm:text-xl md:text-2xl">
+            If you have someone in mind, please contact us personally so we can work something out. We have limited
+            capacity so we have to watch the number of folks we invite. You can either call or text us, or reach out to{' '}
+            <a
+              className="transition-all duration-500 font-bold text-typography underline hover:text-primary"
+              href="mailto:brittaniandklaven@gmail.com"
+            >
+              brittaniandklaven@gmail.com
+            </a>
+          </p>
+        </div>
 
         <div className="px-4 py-10">
           <p className="text-lg sm:text-xl md:text-2xl italic">
