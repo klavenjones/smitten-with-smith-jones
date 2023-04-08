@@ -19,7 +19,7 @@ interface ModalProps {
   setHide: any;
 }
 
-const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
+const transition = { duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const ImageListItem = ({ image, setSelected, setHide }: ImageListItemProps) => {
   return (
@@ -49,12 +49,15 @@ const Modal = ({ selected, setSelected, setHide }: ModalProps) => {
   console.log(selected);
 
   return (
-    <div
+    <motion.div
       onClick={() => {
         setSelected(null);
         setHide(false);
       }}
-      className="fixed inset-0 bg-white/80 z-[1000] cursor-pointer overflow-y-scroll w-full"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="fixed inset-0 bg-white/95 z-[1000] cursor-pointer overflow-y-scroll w-full"
     >
       <div onClick={e => e.stopPropagation()} className="w-full max-w-screen-lg mx-auto my-8 px-8 cursor-default">
         <div className="bg-project-white min-h-screen flex items-center justify-center py-10 px-4">
@@ -64,7 +67,7 @@ const Modal = ({ selected, setSelected, setHide }: ModalProps) => {
                 layoutId={`image-${selected.filename}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
                 className="aspect-auto"
               >
                 <img src={`img/${selected.filename}`} alt={``} className="w-full h-full object-cover object-center" />
@@ -72,8 +75,27 @@ const Modal = ({ selected, setSelected, setHide }: ModalProps) => {
             </div>
           </div>
         </div>
+        <div className="z-[102] fixed top-[20px] right-[1.5rem]">
+          <button
+            className="cursor-pointer"
+            onClick={() => {
+              setSelected(null);
+              setHide(false);
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
