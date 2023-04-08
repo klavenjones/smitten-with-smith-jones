@@ -54,17 +54,17 @@ const Modal = ({ selected, setSelected, setHide }: ModalProps) => {
         setSelected(null);
         setHide(false);
       }}
-      className="fixed inset-0 bg-white/50 z-50 cursor-pointer overflow-y-scroll"
+      className="fixed inset-0 bg-white/80 z-[1000] cursor-pointer overflow-y-scroll w-full"
     >
-      <div onClick={e => e.stopPropagation()} className="w-full max-w-[700px] mx-auto my-8 px-8 cursor-default">
+      <div onClick={e => e.stopPropagation()} className="w-full max-w-screen-lg mx-auto my-8 px-8 cursor-default">
         <div className="bg-project-white min-h-screen flex items-center justify-center py-10 px-4">
           <div className="mx-auto max-w-screen-5xl flex items-center justify-center">
-            <div className="max-w-[1000px]">
+            <div className="w-full">
               <motion.div
                 layoutId={`image-${selected.filename}`}
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
                 className="aspect-auto"
               >
                 <img src={`img/${selected.filename}`} alt={``} className="w-full h-full object-cover object-center" />
