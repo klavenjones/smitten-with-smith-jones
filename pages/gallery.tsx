@@ -1,4 +1,5 @@
 import { Footer, Navigation } from '@/components';
+import { galleryVariant } from '@/variants';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
@@ -7,8 +8,101 @@ interface ImageProps {
   filename: string;
 }
 
+interface ImageListItemProps {
+  image: any;
+  setSelected: any;
+  setHide: any;
+}
+interface ModalProps {
+  selected: any;
+  setSelected: any;
+  setHide: any;
+}
+
+const transition = { duration: 0.7, ease: [0.43, 0.13, 0.23, 0.96] };
+
+const ImageListItem = ({ image, setSelected, setHide }: ImageListItemProps) => {
+  return (
+    <motion.div variants={galleryVariant} className="aspect-square">
+      <motion.img
+        layoutId={`image-${image.filename}`}
+        whileTap={{
+          scale: 0.95,
+        }}
+        onClick={() => {
+          setSelected(image);
+          setHide(true);
+        }}
+        transition={transition}
+        src={`img/${image.filename}`}
+        alt={`${image.filename}`}
+        className="w-full h-full object-cover object-center cursor-auto"
+      />
+    </motion.div>
+  );
+};
+
+const Modal = ({ selected, setSelected, setHide }: ModalProps) => {
+  if (!selected) {
+    <></>;
+  }
+  console.log(selected);
+
+  return (
+    <motion.div
+      onClick={() => {
+        setSelected(null);
+        setHide(false);
+      }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="fixed inset-0 bg-white/95 z-[1000] cursor-pointer overflow-y-scroll w-full"
+    >
+      <div onClick={e => e.stopPropagation()} className="w-full max-w-screen-lg mx-auto my-8 px-8 cursor-default">
+        <div className="bg-project-white min-h-screen flex items-center justify-center py-10 px-4">
+          <div className="mx-auto max-w-screen-5xl flex items-center justify-center">
+            <div className="w-full">
+              <motion.div
+                layoutId={`image-${selected.filename}`}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="aspect-auto"
+              >
+                <img src={`img/${selected.filename}`} alt={``} className="w-full h-full object-cover object-center" />
+              </motion.div>
+            </div>
+          </div>
+        </div>
+        <div className="z-[102] fixed top-[20px] right-[1.5rem]">
+          <button
+            className="cursor-pointer"
+            onClick={() => {
+              setSelected(null);
+              setHide(false);
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
 export default function Gallery() {
   const [images, setImages] = useState<ImageProps[]>([]);
+  const [selected, setSelected] = useState(null);
+  const [hide, setHide] = useState(false);
 
   useEffect(() => {
     async function fetchImages() {
@@ -39,23 +133,17 @@ export default function Gallery() {
         className="bg-project-white min-h-screen py-10 sm:py-20 px-10"
       >
         <div className="mx-auto max-w-screen-2xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <motion.div
+            initial={false}
+            animate={hide ? 'hidden' : 'shown'}
+            variants={galleryVariant}
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+          >
             {images.map(image => (
-              <motion.div
-                key={`${image.filename}`}
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="aspect-square"
-              >
-                <img
-                  src={`img/${image.filename}`}
-                  alt={`${image.filename}`}
-                  className="w-full h-full object-cover object-center"
-                />
-              </motion.div>
+              <ImageListItem key={image.filename} image={image} setSelected={setSelected} setHide={setHide} />
             ))}
-          </div>
+          </motion.div>
+          {selected && <Modal setSelected={setSelected} selected={selected} setHide={setHide} />}
         </div>
       </motion.main>
       <Footer />
