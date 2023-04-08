@@ -27,7 +27,10 @@ const ImageListItem = ({ image, setSelected, setHide }: ImageListItemProps) => {
       <motion.img
         layoutId={`image-${image.filename}`}
         whileTap={{
-          scale: 0.95,
+          scale: 0.98,
+        }}
+        whileHover={{
+          scale: 1.02,
         }}
         onClick={() => {
           setSelected(image);
@@ -36,7 +39,7 @@ const ImageListItem = ({ image, setSelected, setHide }: ImageListItemProps) => {
         transition={transition}
         src={`img/${image.filename}`}
         alt={`${image.filename}`}
-        className="w-full h-full object-cover object-center cursor-auto"
+        className="w-full h-full object-cover object-center cursor-pointer"
       />
     </motion.div>
   );
@@ -46,7 +49,6 @@ const Modal = ({ selected, setSelected, setHide }: ModalProps) => {
   if (!selected) {
     <></>;
   }
-  console.log(selected);
 
   return (
     <motion.div
@@ -76,7 +78,10 @@ const Modal = ({ selected, setSelected, setHide }: ModalProps) => {
           </div>
         </div>
         <div className="z-[102] fixed top-[20px] right-[1.5rem]">
-          <button
+          <motion.button
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
             className="cursor-pointer"
             onClick={() => {
               setSelected(null);
@@ -92,7 +97,7 @@ const Modal = ({ selected, setSelected, setHide }: ModalProps) => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
-          </button>
+          </motion.button>
         </div>
       </div>
     </motion.div>
