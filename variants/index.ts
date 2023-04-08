@@ -2,6 +2,11 @@
     This file will contain variants for Framer Motion Animations
 */
 
+export const galleryVariant = {
+  hidden: { opacity: 0, transition: { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] } },
+  shown: { opacity: 1, transition: { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] } },
+};
+
 export const photoVariant = {
   open: { opacity: 1, y: 0, transition: { type: 'easeIn', duration: 0.5 } },
   closed: { opacity: 0, y: 400, transition: { type: 'easeIn', duration: 0.5 } },

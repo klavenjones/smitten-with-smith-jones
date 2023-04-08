@@ -24,15 +24,5 @@ export default function App({ Component, pageProps }: AppProps) {
     };
   }, []);
 
-  return (
-    <div className="min-h-screen">
-      {loading ? (
-        <PageLoader />
-      ) : (
-        <AnimatePresence mode="wait">
-          <Component {...pageProps} />
-        </AnimatePresence>
-      )}
-    </div>
-  );
+  return <div className="min-h-screen">{loading ? <PageLoader /> : <Component {...pageProps} />}</div>;
 }
