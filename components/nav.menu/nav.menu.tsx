@@ -22,12 +22,12 @@ const navLinks = [
   },
   {
     href: '/details',
-    name: 'Details',
+    name: 'Thank You',
   },
-  {
-    href: '/questions',
-    name: 'Questions',
-  },
+  // {
+  //   href: '/questions',
+  //   name: 'Questions',
+  // },
   {
     href: '/gallery',
     name: 'Gallery',
@@ -36,10 +36,10 @@ const navLinks = [
     href: '/registry',
     name: 'Registry',
   },
-  {
-    href: 'https://brittaniandklaven.rsvpify.com',
-    name: 'RSVP',
-  },
+  // {
+  //   href: 'https://brittaniandklaven.rsvpify.com',
+  //   name: 'RSVP',
+  // },
 ];
 
 // eslint-disable-next-line

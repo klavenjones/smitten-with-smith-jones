@@ -23,8 +23,8 @@ export default function Details() {
         className="hero min-h-[50vh] bg-secondary"
       >
         <div className="hero-content text-center min-w-full">
-          <div className="max-w-md">
-            <h1 className="text-7xl lg:text-[7rem] text-project-white">Reception</h1>
+          <div className="max-w-lg">
+            <h1 className="text-7xl lg:text-[7rem] text-project-white">Thank You</h1>
           </div>
         </div>
       </motion.section>
@@ -36,66 +36,31 @@ export default function Details() {
       >
         <div className="flex flex-col items-center justify-center max-w-screen-2xl mx-auto">
           <div className="text-center text-gray-700">
-            <h1 className="text-typography text-6xl lg:text-7xl">July 28, 2023</h1>
-            <h2 className="sub-title pt-10 text-3xl uppercase font-semibold">Juliette</h2>
-            <div className="pt-4">
-              <p className="text-xl font-normal">6:00 PM - 11:00PM</p>
-              <p className="text-xl font-normal">135 N. 5th Street</p>
-              <p className="text-xl font-normal">Brooklyn, NY</p>
-            </div>
             <div className="pt-8 max-w-lg">
-              <p className="italic leading-8">Attire: Semi-Formal.</p>
+              <h2 className="italic text-xl md:text-2xl sub-title leading-8">Dear Beloved Friends and Family,</h2>
             </div>
 
             <div className="pt-8 max-w-lg">
               <p className="text-base font-light text-gray-500 leading-8">
-                Even though we made our vows in Paris, we would still like to celebrate our union with all of you! Our
-                wedding reception, will be at the <span className="font-bold italic text-typography">Juliette</span> on{' '}
-                <span className="font-bold italic text-typography">Friday, July 28th, 2023</span>. We respectfully ask
-                that this be an <span className="font-bold text-typography">adult only</span> wedding reception (18+).
-                We thank you for attending our reception.{' '}
-                <span className="font-bold italic text-typography">
-                  Please{' '}
-                  <Link
-                    target="_blank"
-                    className="transition-all duration-500 font-bold text-typography underline hover:text-primary"
-                    href="https://brittaniandklaven.rsvpify.com"
-                  >
-                    RSVP
-                  </Link>{' '}
-                  by June 16th, 2023
-                </span>
+                We did it, and we couldn't have done it without you! We celebrated tying the knot and danced the night
+                away at our wedding reception, and your presence made it all the more special.
               </p>
               <p className="mt-4 text-base font-light text-gray-500 leading-8">
-                If you have any questions feel free to email us at{' '}
-                <a
-                  className="transition-all duration-500 font-bold text-typography underline hover:text-primary"
-                  href="mailto:brittaniandklaven@gmail.com"
-                >
-                  brittaniandklaven@gmail.com
-                </a>
+                Your generous spirit, warm wishes, and delightful company lit up the night and our hearts. The laughter,
+                joy, and memories we created together will stay with us forever as we embark on this exciting journey of
+                love and togetherness.
               </p>
-              <div className="mt-8">
-                <p className="italic">
-                  **Please check this page frequently as it may be updated with more details in the coming weeks**
-                </p>
+              <p className="mt-4 text-base font-light text-gray-500 leading-8">
+                From the bottom of our hearts, thank you. We are truly blessed to have you in our lives and look forward
+                to creating even more unforgettable moments together.
+              </p>
+              <p className="mt-4 text-base font-light text-gray-500 leading-8">
+                Keep those smiles shining and the laughter flowing until we meet again!
+              </p>
+              <p className="mt-4 text-base font-light text-gray-500 leading-8">Forever grateful and always giggling,</p>
+              <div className="py-12">
+                <h1 className="mt-4 text-3xl md:text-5xl font-light text-gray-900 leading-8">B & K</h1>
               </div>
-            </div>
-            <div className="pt-8 mx-auto grid grid-cols-2 gap-3 max-w-sm">
-              <Link
-                target="_blank"
-                href={'https://goo.gl/maps/4LdNAwRVrGY5zRAL7'}
-                className="btn btn-outline rounded-none text-typography border-tertiary italic font-light hover:bg-primary hover:border-primary"
-              >
-                Directions
-              </Link>
-              <button
-                onClick={saveCalender}
-                className="btn btn-outline rounded-none border-tertiary italic font-light hover:bg-primary hover:border-primary"
-              >
-                Add To Calander
-              </button>
-              {/* <button className="btn btn-outline">Rsvp</button> */}
             </div>
           </div>
         </div>
