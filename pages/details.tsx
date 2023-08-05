@@ -1,8 +1,7 @@
 import { Footer, Navigation } from '@/components';
-import { saveCalender } from '@/util';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
-import Link from 'next/link';
+
 
 export default function Details() {
   return (
