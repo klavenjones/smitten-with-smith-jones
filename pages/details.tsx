@@ -2,7 +2,6 @@ import { Footer, Navigation } from '@/components';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 
-
 export default function Details() {
   return (
     <>
@@ -41,8 +40,8 @@ export default function Details() {
 
             <div className="pt-8 max-w-lg">
               <p className="text-base font-light text-gray-500 leading-8">
-                We did it, and we couldn't have done it without you! We celebrated tying the knot and danced the night
-                away at our wedding reception, and your presence made it all the more special.
+                We did it, and we couldn&apos;t have done it without you! We celebrated tying the knot and danced the
+                night away at our wedding reception, and your presence made it all the more special.
               </p>
               <p className="mt-4 text-base font-light text-gray-500 leading-8">
                 Your generous spirit, warm wishes, and delightful company lit up the night and our hearts. The laughter,
